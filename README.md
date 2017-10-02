@@ -30,3 +30,10 @@ web site for thesis formatting.
   This defines the variable `\FULLTHESIS` so that chapter specific tables of
   contents are not included when compiling the master Lyx.
 
+* Cross referencing equations, figure numbers, section numbers in other
+  chapters is possible. In each chapter Lyx file, go to 
+
+        Document -> Settings -> Document Class -> Select default master document 
+
+  make sure to set the master document to `phd_thesis.lyx`.
+
