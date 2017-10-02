@@ -1,0 +1,431 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\input{../preamble}
+\newtheorem{lemma}{Lemma}
+%\newtheorem{proof}{Proof}
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{prop}[thm]{\textbf{Proposition}}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-chap
+todonotes
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch childonly1
+\selected 1
+\filename_suffix 0
+\color #ffffff
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 40mm
+\topmargin 3cm
+\rightmargin 25mm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%---------------------------------- 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifdefined
+\backslash
+FULLTHESIS
+\backslash
+else
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Chapter Title Again.
+ It Is Really Really Really Long Here.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptermark{A Shorter Chapter Title Here}
+\end_layout
+
+\end_inset
+
+ We cite 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Krantz2002,Kre1989"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+First Section
+\end_layout
+
+\begin_layout Standard
+For brevity, we will interchangeably use 
+\begin_inset Formula $\mathbf{S}_{n}$
+\end_inset
+
+ for 
+\begin_inset Formula $\mathbf{S}_{n}(\mathcal{V})$
+\end_inset
+
+ and 
+\series bold
+
+\begin_inset Formula $\overline{\mathbf{z}}_{n}$
+\end_inset
+
+
+\series default
+ for 
+\begin_inset Formula $\overline{\mathbf{z}}_{n}(\mathcal{V})$
+\end_inset
+
+, and write 
+\begin_inset Formula $\sup_{\mathcal{V},k}$
+\end_inset
+
+ for 
+\begin_inset Formula $\sup_{\mathcal{V}\in\mathbb{V}}\sup_{k\in\mathcal{K}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathbf{S}_{n}(\mathcal{V})$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{\mathbf{z}}_{n}(\mathcal{V})$
+\end_inset
+
+ will be used mainly when the dependency of 
+\begin_inset Formula $\mathcal{V}$
+\end_inset
+
+ needs to be emphasized.
+ All suprema over 
+\begin_inset Formula $\mathcal{V}$
+\end_inset
+
+ and the kernel 
+\begin_inset Formula $k$
+\end_inset
+
+ should be understood as being constrained within 
+\begin_inset Formula $\mathbb{V}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ respectively.
+ We start with 
+\begin_inset Formula 
+\[
+\sup_{\mathcal{V},k}\left|\overline{\mathbf{z}}_{n}^{\top}(\mathbf{S}_{n}+\gamma_{n}I)^{-1}\overline{\mathbf{z}}_{n}-\boldsymbol{\mu}^{\top}\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}\right|,
+\]
+
+\end_inset
+
+and upper bound the argument of 
+\begin_inset Formula $\sup_{\mathcal{V},k}$
+\end_inset
+
+ as
+\begin_inset Formula 
+\begin{align*}
+ & \left|\overline{\mathbf{z}}_{n}^{\top}(\mathbf{S}_{n}+\gamma_{n}I)^{-1}\overline{\mathbf{z}}_{n}-\boldsymbol{\mu}^{\top}\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}\right|\\
+ & =\left|\overline{\mathbf{z}}_{n}^{\top}(\mathbf{S}_{n}+\gamma_{n}I)^{-1}\overline{\mathbf{z}}_{n}-\boldsymbol{\mu}^{\top}\left(\boldsymbol{\Sigma}+\gamma_{n}I\right)^{-1}\boldsymbol{\mu}+\boldsymbol{\mu}^{\top}\left(\boldsymbol{\Sigma}+\gamma_{n}I\right)^{-1}\boldsymbol{\mu}-\boldsymbol{\mu}^{\top}\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}\right|\\
+ & \le\left|\overline{\mathbf{z}}_{n}^{\top}(\mathbf{S}_{n}+\gamma_{n}I)^{-1}\overline{\mathbf{z}}_{n}-\boldsymbol{\mu}^{\top}\left(\boldsymbol{\Sigma}+\gamma_{n}I\right)^{-1}\boldsymbol{\mu}\right|+\left|\boldsymbol{\mu}^{\top}\left(\boldsymbol{\Sigma}+\gamma_{n}I\right)^{-1}\boldsymbol{\mu}-\boldsymbol{\mu}^{\top}\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}\right|\\
+ & :=(\square_{1})+(\square_{2}).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:hoeffding"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Hoeffding's inequality 
+\end_layout
+
+\end_inset
+
+ Let 
+\begin_inset Formula $X_{1},\ldots,X_{n}$
+\end_inset
+
+ be i.i.d.
+ random variables with 
+\begin_inset Formula $\mathbb{P}(a\le X_{i}\le b)=1$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\overline{X}:=\frac{1}{n}\sum_{i=1}^{n}X_{i}$
+\end_inset
+
+.
+ Then,
+\begin_inset Formula 
+\[
+\mathbb{P}\left(\left|\overline{X}-\mathbb{E}[\overline{X}]\right|\le t\right)\ge1-2\exp\left(-\frac{2nt^{2}}{(b-a)^{2}}\right).
+\]
+
+\end_inset
+
+Equivalently, for any 
+\begin_inset Formula $\delta\in(0,1)$
+\end_inset
+
+, with probability at least 
+\begin_inset Formula $1-\delta$
+\end_inset
+
+, it holds that
+\begin_inset Formula 
+\[
+\left|\overline{X}-\mathbb{E}[\overline{X}]\right|\le\frac{b-a}{\sqrt{2n}}\sqrt{\log(2/\delta)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Images
+\end_layout
+
+\begin_layout Standard
+Let us try to insert an image in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:example"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/lambda_t2_surface1-crop.pdf
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An example of a figure.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:example"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ifdefined
+\backslash
+FULLTHESIS
+\backslash
+else
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "../thesis_bib"
+options "plainnat"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

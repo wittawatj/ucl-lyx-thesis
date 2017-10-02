@@ -1,0 +1,4 @@
+*.swp
+*~
+.dropbox.attr
+.ipynb_checkpoints
