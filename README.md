@@ -19,13 +19,13 @@ web site for thesis formatting.
   contents and chapter specific bibliographies will be removed automatically.
   This automatic inclusion/exclusion is achieved by simply using 
     
-    \ifdefined\FULLTHESIS\else (include table of contents) \fi
+        \ifdefined\FULLTHESIS\else (include table of contents) \fi
   
   This basically means "if the variable `\FULLTHESIS` does not exist (meaning
   we are compiling a chapter file on its own), then include a table of
   contents." In the beginning of the master Lyx file, you will see 
 
-    \newcommand{\FULLTHESIS}{}
+        \newcommand{\FULLTHESIS}{}
 
   This defines the variable `\FULLTHESIS` so that chapter specific tables of
   contents are not included when compiling the master Lyx.
