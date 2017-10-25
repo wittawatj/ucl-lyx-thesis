@@ -1,8 +1,8 @@
 # ucl-lyx-thesis
-PhD thesis template in Lyx for UCL students. This template is *NOT* officially
-endorsed by UCL. This is merely my Lyx setup when I wrote my PhD thesis. Please
-use at your own risk. It is strongly recommended that you check UCL's official
-web site for thesis formatting.
+PhD thesis template in [Lyx](https://www.lyx.org/) for UCL students. This
+template is *NOT* officially endorsed by UCL. This is merely my Lyx setup when
+I wrote my PhD thesis. Please use at your own risk. It is strongly recommended
+that you check UCL's official web site for thesis formatting.
 
 ## Information
 
